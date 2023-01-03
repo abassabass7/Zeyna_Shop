@@ -1,5 +1,6 @@
 package com.example.zeynashop.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -18,6 +19,7 @@ public class Categorie {
     private String descriptionCat;
 
     @OneToMany(mappedBy = "categorie")
+    @JsonIgnore
     private List<Produit> produits;
 }
 

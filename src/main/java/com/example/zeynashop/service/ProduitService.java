@@ -2,9 +2,9 @@ package com.example.zeynashop.service;
 
 import com.example.zeynashop.entities.Categorie;
 import com.example.zeynashop.entities.Produit;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
 public interface ProduitService {
 	Produit saveProduit(Produit p);
 	Produit updateProduit(Produit p);
@@ -19,5 +19,4 @@ public interface ProduitService {
 	List<Produit> findByCategorieIdCat(Long id);
 	List<Produit> findByOrderByNomProduitAsc();
 	List<Produit> trierProduitsNomsPrix();
-
 }

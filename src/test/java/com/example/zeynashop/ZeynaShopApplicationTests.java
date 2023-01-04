@@ -3,7 +3,6 @@ package com.example.zeynashop;
 
 import java.util.Date;
 import java.util.List;
-
 import com.example.zeynashop.entities.Categorie;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -65,20 +64,12 @@ class ProduitsApplicationTests {
     }
 
 
-    @Test
-    public void tesfindByNomProduitContains()
-    {
-        List<Produit> prods = produitRepository.findAllByNomProduit("hp");
 
-        for (Produit p:prods)
-            System.out.println(p);
-
-    }
 
     @Test
     public void tesfindProduitbyNom()
     {
-        List<Produit> prods = produitRepository.findAllByNomProduit("hp");
+        List<Produit> prods = produitRepository.findByNomProduit("hp");
 
         for (Produit p:prods)
             System.out.println(p);
@@ -88,7 +79,7 @@ class ProduitsApplicationTests {
     @Test
     public void testTrierProduitsNomsPrix()
     {
-        List<Produit> prods = produitRepository.TrierProduitsNomsPrix();
+        List<Produit> prods = produitRepository.trierProduitsNomsPrix();
         for (Produit p : prods)
         {
             System.out.println(p);

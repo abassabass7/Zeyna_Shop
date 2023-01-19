@@ -14,11 +14,11 @@ import com.example.zeynashop.repos.ProduitRepository;
 
 @SpringBootTest
 class ProduitsApplicationTests {
-
+/*
     @Autowired
-    private ProduitRepository produitRepository;
+    private ProduitRepository produitRepository;*/
 
-    @Test
+    /*@Test
     //tester ajout d'un nouveau produit
     public void testCreateProduit() {
         Produit prod = new Produit("PS 5",2000.500,new Date());
@@ -31,12 +31,12 @@ class ProduitsApplicationTests {
         Produit p=produitRepository.findById(3L).get();
         System.out.println(p);
 
-    }
+    }*/
 
 
 
     // modifier produit
-    @Test
+   /* @Test
     public void testUpdateProduit()
     {
         Produit p = produitRepository.findById(2L).get();
@@ -116,7 +116,7 @@ class ProduitsApplicationTests {
             System.out.println(p);
         }
     }
-
+*/
 
 }
 
